@@ -6,7 +6,14 @@ interface Props {
 }
 
 const BodyContentContainer = ({ children }: Props) => {
-  return <Box paddingX={{ base: "50px", lg: "80px" }}>{children}</Box>;
+  return (
+    <Box
+      fontFamily={"monospace"}
+      paddingX={{ base: "20px", lg: "150px" }}
+    >
+      {children}
+    </Box>
+  );
 };
 
 export default BodyContentContainer;
