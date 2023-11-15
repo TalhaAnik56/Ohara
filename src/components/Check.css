@@ -1,0 +1,82 @@
+/* Default slider container */
+.custom-slider {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .slick-arrow {
+    /* Position the arrows within the image container */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  /* Arrow position */
+  .slick-prev {
+    left: 15px; 
+  }
+  .slick-next {
+    right: 15px; 
+  }
+
+  .dot_button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    padding: 0;
+    background: none;
+    text-align: center;
+  }
+
+  .dot_button li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0;
+  }
+
+  /* Default styles for button */
+  .dot_button li button {
+    border: none;
+    background: #ccc;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 13px;
+    width: 13px;
+    border-radius: 6.5px;
+  }
+
+  .dot_button li.slick-active button {
+    background-color: white;
+  }
+}
+
+
+/* Slider Container for mobile screen */
+@media only screen and (max-width: 768px) {
+  .custom-slider {
+    height: 150px;
+
+    /* Arrow position */
+    .slick-prev {
+      left: 5px; 
+    }
+    .slick-next {
+      right: 5px;
+    }
+
+    .dot_button li button {
+      border: none;
+      background: #ccc;
+      color: transparent;
+      cursor: pointer;
+      display: block;
+      height: 8px;
+      width: 8px;
+      border-radius: 4px;
+    }
+  }
+}

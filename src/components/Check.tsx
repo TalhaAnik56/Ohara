@@ -1,37 +1,73 @@
-import React, { useRef } from 'react';
-import Slider from 'react-slick';
-import { Box, Button } from '@chakra-ui/react';
-
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { Box, Icon, Image } from "@chakra-ui/react";
+import React from "react";
+import { CgPlayTrackPrevO } from "react-icons/cg";
+import { CgPlayTrackNextO } from "react-icons/cg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "./Check.css"; // Make sure to define your custom styles here
 
 interface CarouselProps {
   images: string[];
 }
 
 const Check: React.FC<CarouselProps> = ({ images }) => {
-  const slider = useRef<Slider | null>(null);
-
   const settings = {
     dots: true,
+    dotsClass: "dot_button",
+    appendDots: (dots: React.ReactNode) => (
+      <Box
+        position="absolute"
+        bottom={{ base: "0px", lg: "0px" }}
+        left="50%"
+        transform="translateX(-50%)"
+        zIndex={2}
+      >
+        <ul style={{ padding: 0, margin: 0 }}>{dots}</ul>
+      </Box>
+    ),
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    prevArrow: (
+      <Icon
+        boxSize={{ base: "20px", lg: "30px" }}
+        _hover={{ color: "white" }}
+        color={"gray.300"}
+        as={CgPlayTrackPrevO}
+      ></Icon>
+    ),
+    nextArrow: (
+      <Icon
+        boxSize={{ base: "20px", lg: "30px" }}
+        _hover={{ color: "white" }}
+        color={"gray.300"}
+        as={CgPlayTrackNextO}
+      ></Icon>
+    ),
   };
 
   return (
-    <Box>
-      <Slider ref={slider} {...settings}>
+    <Box
+      paddingX={{ base: "20px", lg: "120px" }}
+      marginTop={"30px"}
+    >
+      <Slider {...settings} className="custom-slider">
         {images.map((image, index) => (
-          <Box key={index}>
-            <img src={image} alt={`Slide ${index + 1}`} />
+          <Box key={index} position={"relative"}>
+            <Image
+              height={{ base: "150px", md: "300px" }}
+              width={"100%"}
+              objectFit={"cover"}
+              src={image}
+              borderRadius={"10px"}
+            />
           </Box>
         ))}
       </Slider>
-
-      <Button onClick={() => slider.current?.slickPrev()}>Previous</Button>
-      <Button onClick={() => slider.current?.slickNext()}>Next</Button>
     </Box>
   );
 };
