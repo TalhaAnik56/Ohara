@@ -4,8 +4,9 @@ const SignIn = () => {
   return (
     <Button
       size={{ base: "sm", lg: "md" }}
-      variant={"outline"}
-      colorScheme="blue"
+      bg={"gray.700"}
+      color={"white"}
+      _hover={{bg:"gray.700",color:"white"}}
     >
       Sign In
     </Button>

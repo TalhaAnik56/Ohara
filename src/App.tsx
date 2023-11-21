@@ -8,7 +8,6 @@ const App = () => {
       <Navbar />
       <Filters />
       <Carousel></Carousel>
-
     </>
   );
 };

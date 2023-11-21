@@ -8,8 +8,8 @@ interface Props {
 const BodyContentContainer = ({ children }: Props) => {
   return (
     <Box
+      bg="#3f5147"
       fontFamily={"monospace"}
-      paddingX={{ base: "20px", lg: "150px" }}
     >
       {children}
     </Box>

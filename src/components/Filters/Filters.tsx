@@ -6,10 +6,10 @@ import Writers from "./Writers";
 const Filters = () => {
   return (
     <Box
-      display={{base:"none",lg:"block"}}
+      display={{ base: "none", lg: "block" }}
       fontFamily={"monospace"}
       paddingX="150px"
-      border={"1px solid #ccc"}
+      borderBottom={"1px solid gray"}
     >
       <HStack justifyContent="space-between">
         <Genres />
@@ -17,21 +17,23 @@ const Filters = () => {
         <Writers />
         <Button
           _hover={{
-            bg: "white",
-            borderBottom: "3px solid gray",
+            bg: "#3f5147",
+            borderBottom: "4px solid #2d3748",
             borderRadius: "0px",
           }}
-          bg={"white"}
+          bg={"#3f5147"}
+          color={"white"}
         >
           Trading
         </Button>
         <Button
           _hover={{
-            bg: "white",
-            borderBottom: "3px solid gray",
+            bg: "#3f5147",
+            borderBottom: "4px solid #2d3748",
             borderRadius: "0px",
           }}
-          bg={"white"}
+          bg={"#3f5147"}
+          color={"white"}
         >
           Start Selling
         </Button>
