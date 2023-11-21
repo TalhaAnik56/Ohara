@@ -18,11 +18,12 @@ const Genres = () => {
         color={"white"}
         bg={"#3f5147"}
         as={Button}
-        rightIcon={<BsCaretDownSquare /> }
+        rightIcon={<BsCaretDownSquare />}
       >
         Genres
       </MenuButton>
-      <MenuList>
+      {/* to overlap over arrow signs I put zIndex={2}, Look at the UI */}
+      <MenuList position={"relative"} zIndex={2}>
         <MenuItem key={1}>Drama</MenuItem>
         <MenuItem key={2}>Horror</MenuItem>
         <MenuItem key={3}>Adventure</MenuItem>

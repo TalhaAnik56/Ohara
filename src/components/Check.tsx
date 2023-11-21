@@ -23,7 +23,7 @@ const Check: React.FC<CarouselProps> = ({ images }) => {
         transform="translateX(-50%)"
         zIndex={2}
       >
-        <ul style={{ padding: 0, margin: 0 }}>{dots}</ul>
+        <ul>{dots}</ul>
       </Box>
     ),
     infinite: true,

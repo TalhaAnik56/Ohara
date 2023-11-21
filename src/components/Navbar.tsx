@@ -9,7 +9,6 @@ const Navbar = () => {
     <Box
       paddingX={{ base: "20px", lg: "150px" }}
       paddingY={{ base: "5px", lg: "10px" }}
-      //bg={"#fbfcfe"}
     >
       <HStack
         justifyContent={{ base: "space-between", lg: "normal" }}
