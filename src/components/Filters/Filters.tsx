@@ -8,8 +8,6 @@ const Filters = () => {
     <Box
       display={{ base: "none", lg: "block" }}
       fontFamily={"monospace"}
-      paddingX="150px"
-      borderBottom={"1px solid gray"}
     >
       <HStack justifyContent="space-between">
         <Genres />
