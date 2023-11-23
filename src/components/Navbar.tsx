@@ -1,5 +1,5 @@
 import { Box, HStack, Image } from "@chakra-ui/react";
-import logo from "../assets/Ohara.svg";
+import logo from "../assets/crop.svg";
 import Cart from "./Cart";
 import SearchInput from "./SearchInput";
 import SignIn from "./SignIn";
@@ -10,7 +10,7 @@ const Navbar = () => {
     <Box
       paddingX={{ base: "20px", lg: "150px" }}
       paddingBottom={{ base: "15px", lg: "0px" }}
-      borderBottom={"1px solid gray"}
+      //borderBottom={"1px solid gray"}
       boxShadow="0 4px 8px 0 rgba(0,0,0,0.2)"
     >
       <HStack
@@ -20,7 +20,7 @@ const Navbar = () => {
         <Image
           cursor={"pointer"}
           src={logo}
-          height={{ base: "60px", lg: "105px" }}
+          height={{ base: "60px", lg: "85px" }}
           width={{ base: "150px", lg: "230px" }}
           objectFit={"cover"}
         />

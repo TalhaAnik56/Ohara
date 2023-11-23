@@ -1,4 +1,6 @@
 import Banners from "./components/Banners";
+import BookGrid from "./components/BookGrid";
+import Demo from "./components/Demo";
 import Navbar from "./components/Navbar";
 
 const App = () => {
@@ -6,6 +8,8 @@ const App = () => {
     <>
       <Navbar />
       <Banners/>
+      <BookGrid/>
+      <Demo/>
     </>
   );
 };

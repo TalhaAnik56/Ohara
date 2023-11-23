@@ -26,14 +26,14 @@ const SearchInput = () => {
           children={<BsSearch />}
         />
         <Input
-          color={"gray"}
           ref={ref}
+          border={"3px solid #2d3748"}
           borderRadius={5}
           variant="filled"
           placeholder="Search books by title"
           _placeholder={{color:"gray"}}
           bg={"white"}
-          _focus={{ border: "3px solid #2d3748",bg:"white",color:"gray"}}
+          _focus={{ border: "3px solid #2d3748",}}
           _hover={{ bg: "white" }}
         />
       </InputGroup>

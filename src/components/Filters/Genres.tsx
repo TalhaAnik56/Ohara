@@ -6,17 +6,16 @@ const Genres = () => {
     <Menu>
       <MenuButton
         _active={{
-          bg: "#3f5147",
+          bg: "white",
           borderBottom: "4px solid #2d3748",
           borderRadius: "0px",
         }}
         _hover={{
-          bg: "#3f5147",
+          bg: "white",
           borderBottom: "4px solid #2d3748",
           borderRadius: "0px",
         }}
-        color={"white"}
-        bg={"#3f5147"}
+        bg={"white"}
         as={Button}
         rightIcon={<BsCaretDownSquare />}
       >

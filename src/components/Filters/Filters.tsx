@@ -5,33 +5,28 @@ import Writers from "./Writers";
 
 const Filters = () => {
   return (
-    <Box
-      display={{ base: "none", lg: "block" }}
-      fontFamily={"monospace"}
-    >
+    <Box display={{ base: "none", lg: "block" }} fontFamily={"monospace"}>
       <HStack justifyContent="space-between">
         <Genres />
         <Publishers />
         <Writers />
         <Button
           _hover={{
-            bg: "#3f5147",
+            bg: "white",
             borderBottom: "4px solid #2d3748",
             borderRadius: "0px",
           }}
-          bg={"#3f5147"}
-          color={"white"}
+          bg={"white"}
         >
           Trading
         </Button>
         <Button
           _hover={{
-            bg: "#3f5147",
+            bg: "white",
             borderBottom: "4px solid #2d3748",
             borderRadius: "0px",
           }}
-          bg={"#3f5147"}
-          color={"white"}
+          bg={"white"}
         >
           Start Selling
         </Button>
