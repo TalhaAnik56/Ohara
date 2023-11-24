@@ -20,7 +20,7 @@ const Navbar = () => {
         <Image
           cursor={"pointer"}
           src={logo}
-          height={{ base: "60px", lg: "85px" }}
+          height={{ base: "50px", lg: "85px" }}
           width={{ base: "150px", lg: "230px" }}
           objectFit={"cover"}
         />

@@ -45,6 +45,7 @@ const Demo = () => {
                     Oscar Wilde, T. S. Eliot, Aldous Huxley, and George Orwell,
                     and more fantastic books sold by expert sellers.
                   </Text>
+                  <Box display={"flex"} justifyContent={{base:"center",lg:"normal"}}>
                   <Button
                     marginTop={"20px"}
                     variant={"outline"}
@@ -55,6 +56,7 @@ const Demo = () => {
                   >
                     See the list
                   </Button>
+                  </Box>
                 </Box>
               </Box>
             </GridItem>
