@@ -8,8 +8,8 @@ const App = () => {
     <>
       <Navbar />
       <Banners/>
-      <BookGrid/>
       <Demo/>
+      <BookGrid/>
     </>
   );
 };

@@ -16,7 +16,7 @@ const SearchInput = () => {
         }
       }}
     >
-      <InputGroup fontFamily={"monospace"}>
+      <InputGroup>
         <InputRightElement
           as={"button"}
           borderTopRightRadius={5}

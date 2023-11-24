@@ -51,12 +51,11 @@ const BookGrid = () => {
           paddingBottom={"20px"}
           fontWeight={"bold"}
           as={"h1"}
-          fontFamily={"monospace"}
-          fontSize={"30px"}
+          fontSize={{base:"20px",lg:"30px"}}
         >
           Top Selling
         </Text>
-        <SimpleGrid spacing={"50px"} columns={5}>
+        <SimpleGrid spacing={{base:"20px",lg:"50px"}} columns={{base:3,lg:5}}>
           {images.map((img) => (
             <Card overflow={"hidden"} borderRadius={"5px"} >
               <Image maxHeight={"250px"} objectFit={"cover"} src={img} />

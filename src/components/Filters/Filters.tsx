@@ -5,7 +5,7 @@ import Writers from "./Writers";
 
 const Filters = () => {
   return (
-    <Box display={{ base: "none", lg: "block" }} fontFamily={"monospace"}>
+    <Box display={{ base: "none", lg: "block" }}>
       <HStack justifyContent="space-between">
         <Genres />
         <Publishers />
