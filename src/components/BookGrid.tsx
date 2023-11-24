@@ -1,4 +1,4 @@
-import { Box, Button, Card, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Button, Card, HStack, Image, SimpleGrid, Text } from "@chakra-ui/react";
 //import image1 from "../assets/books/badol.png";
 //import image2 from "../assets/books/desheBideshe.png";
 //import image3 from "../assets/books/dianosour.jpg";
@@ -17,6 +17,8 @@ import image15 from "../assets/books/obonil.png";
 import image16 from "../assets/books/prequel.jpg";
 import image17 from "../assets/books/tiger.png";
 //import image18 from "../assets/books/tower.jpg";
+
+import glittering from "../assets/icons/glittering.png"
 
 const images = [
   //image1,
@@ -47,14 +49,17 @@ const BookGrid = () => {
         marginTop={{ base: "30px", lg: "70px" }}
         borderBottom={"1px solid #ccc"}
       >
+        <HStack>
         <Text
-          paddingBottom={"20px"}
+          marginBottom={"20px"}
           fontWeight={"bold"}
           as={"h1"}
           fontSize={{base:"20px",lg:"30px"}}
         >
           Top Selling
         </Text>
+        <Image height={{base:"20px",lg:"35px"}} objectFit={"cover"} src={glittering}/>
+        </HStack>
         <SimpleGrid spacing={{base:"20px",lg:"50px"}} columns={{base:3,lg:5}}>
           {images.map((img) => (
             <Card overflow={"hidden"} borderRadius={"5px"} >

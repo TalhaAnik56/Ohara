@@ -10,7 +10,7 @@ const Demo = () => {
         marginX={{ base: "20px", lg: "120px" }}
         marginTop={{ base: "30px", lg: "60px" }}
       >
-        <Box paddingX={"40px"} paddingY={"40px"}>
+        <Box paddingX={"40px"} paddingY={"40px"} >
           <Grid
             templateAreas={{ base: `"image" "text"`, lg: `"image text"` }}
             templateColumns={{ base: "1fr", lg: "1fr 1fr" }}

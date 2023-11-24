@@ -59,7 +59,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         {images.map((image, index) => (
           <Box key={index} position={"relative"}>
             <Image
-              height={{ base: "150px", md: "300px" }}
+              height={{ base: "150px", md: "500px" }}
               width={"100%"}
               objectFit={"cover"}
               src={image}
