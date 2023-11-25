@@ -1,5 +1,6 @@
 import Banners from "./components/Banners";
 import BookGrid from "./components/BookGrid";
+import CheckThisOut from "./components/CheckThisOut";
 import Demo from "./components/Demo";
 import FreshlyBaked from "./components/FreshlyBaked";
 import Navbar from "./components/Navbar";
@@ -16,6 +17,7 @@ const App = () => {
       <TradingBanner/>
       <FreshlyBaked/>
       <SellerBanner/>
+      <CheckThisOut/>
     </>
   );
 };

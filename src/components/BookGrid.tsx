@@ -76,8 +76,8 @@ const BookGrid = () => {
           spacing={{ base: "10px", lg: "20px" }}
           columns={{ base: 3, lg: 6 }}
         >
-          {images.map((img) => (
-            <Card overflow={"hidden"} borderRadius={"5px"}>
+          {images.map((img,index) => (
+            <Card key={index} overflow={"hidden"} borderRadius={"5px"}>
               <Image maxHeight={"250px"} objectFit={"cover"} src={img} />
               <Text>Humayun Ahmed</Text>
             </Card>

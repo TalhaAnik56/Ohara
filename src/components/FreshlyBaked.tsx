@@ -89,8 +89,9 @@ const FreshlyBaked = () => {
                 spacing={{ base: "20px", lg: "20px" }}
                 columns={{ base: 2, lg: 4 }}
               >
-                {images.map((img) => (
+                {images.map((img,index) => (
                   <Card
+                    key={index}
                     overflow={"hidden"}
                     borderRadius={"5px"}
                     boxShadow="4px 4px 8px 0 rgba(0,0,0,0.2)"
