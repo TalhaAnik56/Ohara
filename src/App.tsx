@@ -1,7 +1,9 @@
 import Banners from "./components/Banners";
 import BookGrid from "./components/BookGrid";
 import Demo from "./components/Demo";
+import FreshlyBaked from "./components/FreshlyBaked";
 import Navbar from "./components/Navbar";
+import SellerBanner from "./components/SellerBanner";
 import TradingBanner from "./components/TradingBanner";
 
 const App = () => {
@@ -12,6 +14,8 @@ const App = () => {
       <Demo />
       <BookGrid />
       <TradingBanner/>
+      <FreshlyBaked/>
+      <SellerBanner/>
     </>
   );
 };

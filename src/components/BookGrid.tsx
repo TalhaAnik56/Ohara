@@ -1,4 +1,12 @@
-import { Box, Button, Card, HStack, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Card,
+  HStack,
+  Image,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
 //import image1 from "../assets/books/badol.png";
 //import image2 from "../assets/books/desheBideshe.png";
 //import image3 from "../assets/books/dianosour.jpg";
@@ -7,8 +15,8 @@ import { Box, Button, Card, HStack, Image, SimpleGrid, Text } from "@chakra-ui/r
 import image6 from "../assets/books/fury.jpg";
 import image7 from "../assets/books/got.jpg";
 import image8 from "../assets/books/gun.jpg";
-//import image9 from "../assets/books/kingKong.jpg";
-//mport image10 from "../assets/books/kracherCornel.png";
+import image9 from "../assets/books/kingKong.jpg";
+import image10 from "../assets/books/kracherCornel.png";
 import image11 from "../assets/books/mourinho.jpg";
 import image12 from "../assets/books/mujibur.png";
 import image13 from "../assets/books/neighbour.png";
@@ -18,7 +26,7 @@ import image16 from "../assets/books/prequel.jpg";
 import image17 from "../assets/books/tiger.png";
 //import image18 from "../assets/books/tower.jpg";
 
-import glittering from "../assets/icons/glittering.png"
+import glittering from "../assets/icons/glittering.png";
 
 const images = [
   //image1,
@@ -29,8 +37,8 @@ const images = [
   image6,
   image7,
   image8,
-  //image9,
-  //image10,
+  image9,
+  image10,
   image11,
   image12,
   image13,
@@ -46,37 +54,50 @@ const BookGrid = () => {
     <>
       <Box
         marginX={{ base: "20px", lg: "120px" }}
-        marginTop={{ base: "30px", lg: "70px" }}
+        marginY={{ base: "30px", lg: "40px" }}
         borderBottom={"1px solid #ccc"}
       >
-        <HStack>
-        <Text
-          marginBottom={"20px"}
-          fontWeight={"bold"}
-          as={"h1"}
-          fontSize={{base:"20px",lg:"30px"}}
-        >
-          Top Selling
-        </Text>
-        <Image height={{base:"20px",lg:"35px"}} objectFit={"cover"} src={glittering}/>
+        <HStack marginBottom={"20px"}>
+          <Text
+            fontWeight={"semibold"}
+            as={"h1"}
+            fontSize={{ base: "25px", lg: "30px" }}
+          >
+            Top Selling
+          </Text>
+
+          <Image
+            height={{ base: "25px", lg: "35px" }}
+            objectFit={"cover"}
+            src={glittering}
+          />
         </HStack>
-        <SimpleGrid spacing={{base:"20px",lg:"50px"}} columns={{base:3,lg:5}}>
+        <SimpleGrid
+          spacing={{ base: "10px", lg: "20px" }}
+          columns={{ base: 3, lg: 6 }}
+        >
           {images.map((img) => (
-            <Card overflow={"hidden"} borderRadius={"5px"} >
+            <Card overflow={"hidden"} borderRadius={"5px"}>
               <Image maxHeight={"250px"} objectFit={"cover"} src={img} />
               <Text>Humayun Ahmed</Text>
             </Card>
           ))}
         </SimpleGrid>
-        <Box marginTop={"40px"} marginBottom={"20px"} display={"flex"} justifyContent={"center"}>
+        <Box
+          marginTop={"40px"}
+          marginBottom={"20px"}
+          display={"flex"}
+          justifyContent={"center"}
+        >
           <Button
             variant={"outline"}
-            paddingX={"30px"}
-            borderRadius={"20px"}
+            size={{ base: "sm", lg: "md" }}
+            fontSize={{ base: "normal", lg: "lg" }}
+            borderRadius={{ base: "6px", lg: "10px" }}
             colorScheme="blue"
-            _hover={{bg:"#2596be",color:"white"}}
+            _hover={{ bg: "#2596be", color: "white" }}
           >
-            See More
+            View All
           </Button>
         </Box>
       </Box>

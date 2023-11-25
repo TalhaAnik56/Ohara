@@ -7,7 +7,7 @@ const TradingBanner = () => {
       templateAreas={{base:`"text"`,lg:`"text image"`}}
       templateColumns={{base:"1fr",lg:".6fr .4fr"}}
       marginX={{ base: "20px", lg: "120px" }}
-      marginTop={{ base: "30px", lg: "70px" }}
+      marginY={{ base: "30px", lg: "40px" }}
       bg={"#232f3e"}
       borderRadius={"10px"}
       overflow={"hidden"}

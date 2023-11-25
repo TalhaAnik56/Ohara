@@ -1,7 +1,7 @@
 import { Box, Button, Grid, GridItem, Image, Text } from "@chakra-ui/react";
-import demo from "../assets/demo/demo.webp";
+import sellerImage from "../assets/sellerBanner.webp";
 
-const Demo = () => {
+const SellerBanner = () => {
   return (
     <>
       <Box
@@ -9,15 +9,14 @@ const Demo = () => {
         bg={"#f7fcfc"}
         marginX={{ base: "20px", lg: "120px" }}
         marginY={{ base: "30px", lg: "40px" }}
-        
       >
         <Box paddingX={{base:"25px",lg:"40px"}} paddingY={{base:"25px",lg:"40px"}}>
           <Grid
             templateAreas={{ base: `"image" "text"`, lg: `"image text"` }}
-            templateColumns={{ base: "1fr", lg: "1fr 1fr" }}
+            templateColumns={{ base: "1fr", lg: ".35fr .65fr" }}
           >
             <GridItem area={"image "}>
-              <Image borderRadius={"10px"} src={demo} objectFit={"cover"} />
+              <Image borderRadius={"10px"} src={sellerImage} objectFit={"cover"} />
             </GridItem>
             <GridItem area={"text"}>
               <Box
@@ -34,7 +33,7 @@ const Demo = () => {
                     fontWeight={"semibold"}
                     fontSize={{ base: "25px", lg: "35px" }}
                   >
-                    Most expensive sales from July to September 2023
+                    Hey, Why don't you become a <Text as={"span"} color="green.400">Seller</Text> and earn money?
                   </Text>
                   <Text
                     textAlign={"justify"}
@@ -56,10 +55,10 @@ const Demo = () => {
                       size={{ base: "sm", lg: "md" }}
                       fontSize={{ base: "normal", lg: "lg" }}
                       borderRadius={{ base: "6px", lg: "10px" }}
-                      colorScheme="blue"
-                      _hover={{ bg: "#2596be", color: "white" }}
+                      colorScheme="green"
+                      _hover={{ bg: "green.400", color: "white" }}
                     >
-                      See the list
+                      Become a seller
                     </Button>
                   </Box>
                 </Box>
@@ -72,4 +71,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default SellerBanner;

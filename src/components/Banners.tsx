@@ -1,6 +1,6 @@
 
 import image1 from "../assets/carousel/car1.webp";
-import image2 from "../assets/carousel/car2.webp";
+import image2 from "../assets/carousel/car2.jpg";
 import image3 from "../assets/carousel/car3.webp";
 import image4 from "../assets/carousel/car4.webp";
 import image5 from "../assets/carousel/car5.webp";
