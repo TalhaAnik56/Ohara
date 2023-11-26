@@ -1,5 +1,6 @@
 import Banners from "./components/Banners";
 import BookGrid from "./components/BookGrid";
+import CheapBooksBanner from "./components/CheapBooksBanner";
 import CheckThisOut from "./components/CheckThisOut";
 import Demo from "./components/Demo";
 import FreshlyBaked from "./components/FreshlyBaked";
@@ -18,6 +19,7 @@ const App = () => {
       <FreshlyBaked/>
       <SellerBanner/>
       <CheckThisOut/>
+      <CheapBooksBanner/>
     </>
   );
 };

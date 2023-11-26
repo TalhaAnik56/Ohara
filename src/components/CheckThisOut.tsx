@@ -24,10 +24,10 @@ const cards = [
 const CheckThisOut = () => {
   return (
     <Box
-      marginX={{ base: "20px", lg: "120px" }}
+      marginX={{ base: "40px", lg: "120px" }}
       marginY={{ base: "30px", lg: "40px" }}
     >
-      <SimpleGrid spacing="30px" columns={{ base: 2, lg: 4 }}>
+      <SimpleGrid spacing={{ base: "20px", lg: "30px" }} columns={{ base: 1, lg: 4 }}>
         {cards.map((card, index) => (
           <Card
             key={index}
@@ -44,7 +44,7 @@ const CheckThisOut = () => {
             >
               <Text
                 fontWeight={"semibold"}
-                fontSize={{ base: "15px", lg: "25px" }}
+                fontSize={{ base: "20px", lg: "25px" }}
                 as={"h1"}
                 marginBottom={{ base: "10px", lg: "10px" }}
               >
