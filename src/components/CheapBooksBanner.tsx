@@ -18,7 +18,7 @@ import icon from "../assets/icons/affordAble.png"
 
 const images = [image1, image2, image3, image4, image5, image6];
 
-const BookGrid = () => {
+const CheapBooksBanner = () => {
   return (
     <>
       <Box
@@ -74,4 +74,4 @@ const BookGrid = () => {
   );
 };
 
-export default BookGrid;
+export default CheapBooksBanner;
