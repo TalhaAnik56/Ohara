@@ -3,6 +3,7 @@ import BookGrid from "./components/BookGrid";
 import CheapBooksBanner from "./components/CheapBooksBanner";
 import CheckThisOut from "./components/CheckThisOut";
 import Demo from "./components/Demo";
+import Footer from "./components/Footer";
 import FreshlyBaked from "./components/FreshlyBaked";
 import Navbar from "./components/Navbar";
 import SellerBanner from "./components/SellerBanner";
@@ -20,6 +21,7 @@ const App = () => {
       <SellerBanner/>
       <CheckThisOut/>
       <CheapBooksBanner/>
+      <Footer/>
     </>
   );
 };
