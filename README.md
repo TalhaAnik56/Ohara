@@ -32,6 +32,8 @@ These features collectively contribute to an enhanced and user-centric e-commerc
 ## Technologies Used
 - **Frontend:** React 18 with TypeScript, React Query, React Router, Zustand, Chakra UI
   
-- **Backend Technology:** The backend of Ohara is built using Django and PostgreSQL. I will update the link of the repository of Backend as soon as possible.<br>
-   Framework: Django<br>
-   Database: PostgreSQL<br>
+- **Backend Technology:** I will update the link of the repository of Backend as soon as possible. The backend of Ohara is built using:<br>
+   <ul>
+     <li>Framework: Django</li>
+     <li>Database: PostgreSQL</li>
+   </ul>
