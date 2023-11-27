@@ -41,7 +41,7 @@ const FreshlyBaked = () => {
     
       >
         <Box
-          paddingX={{ base: "30px", lg: "40px" }}
+          paddingX={{ base: "20px", lg: "40px" }}
           paddingY={{ base: "10px", lg: "40px" }}
         >
           <Grid
@@ -61,7 +61,7 @@ const FreshlyBaked = () => {
                 <Text
                   textAlign={"justify"}
                   marginY={{ base: "20px", lg: "25px" }}
-                  fontSize={{ base: "12px", lg: "20px" }}
+                  fontSize={{ base: "15px", lg: "20px" }}
                   color={"ccc"}
                 >
                   AbeBooks regularly publishes fascinating features about a huge

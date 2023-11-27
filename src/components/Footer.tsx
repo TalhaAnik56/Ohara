@@ -43,9 +43,9 @@ const Footer = () => {
       /> 
     </Box>
 
-    <Box paddingX={"40px"} paddingY={"60px"} bg={'#005caa'} color={"white"} textAlign={"end"}>
-      <Text fontSize={"25px"}>Proudly made by</Text>
-      <Text fontFamily={"Caveat Brush"} fontSize={"30px"}>Talha Anik</Text>
+    <Box paddingX={"40px"} paddingY={{base:"40px",lg:"60px"}} bg={'#005caa'} color={"white"} textAlign={"end"}>
+      <Text fontSize={{base:"20px",lg:"25px"}}>Proudly made by</Text>
+      <Text cursor={"pointer"} target="_blank" as={"a"} href="https://talha-taiyoub.vercel.app/" fontFamily={"Caveat Brush"} fontSize={{base:"25px",lg:"30px"}}>Talha Anik</Text>
     </Box>
 
 

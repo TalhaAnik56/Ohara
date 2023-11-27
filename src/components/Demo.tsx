@@ -11,7 +11,7 @@ const Demo = () => {
         marginY={{ base: "30px", lg: "40px" }}
         
       >
-        <Box paddingX={{base:"25px",lg:"40px"}} paddingY={{base:"25px",lg:"40px"}}>
+        <Box paddingX={{base:"20px",lg:"40px"}} paddingY={{base:"25px",lg:"40px"}}>
           <Grid
             templateAreas={{ base: `"image" "text"`, lg: `"image text"` }}
             templateColumns={{ base: "1fr", lg: "1fr 1fr" }}

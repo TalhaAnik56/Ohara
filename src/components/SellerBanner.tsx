@@ -38,7 +38,7 @@ const SellerBanner = () => {
                   <Text
                     textAlign={"justify"}
                     marginTop={"20px"}
-                    fontSize={{ base: "12px", lg: "17px" }}
+                    fontSize={{ base: "15px", lg: "17px" }}
                     color={"ccc"}
                   >
                     A spectacular, 1,200 year old manuscript, iconic works by
