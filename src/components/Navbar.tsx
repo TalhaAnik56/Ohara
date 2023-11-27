@@ -1,5 +1,5 @@
 import { Box, HStack, Image } from "@chakra-ui/react";
-import logo from "../assets/crop.svg";
+import logo from "../assets/icons/crop.svg";
 import Cart from "./Cart";
 import SearchInput from "./SearchInput";
 import SignIn from "./SignIn";
