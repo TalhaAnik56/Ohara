@@ -11,7 +11,6 @@ Please note: This repository specifically addresses the frontend part of the pro
 - **Customer and Seller Segregation:** Each user will have a separate ID as either a customer or a seller. The same ID cannot serve as both a customer and a seller.
 - **Shopping Cart:** Add or remove items, modify quantities, and proceed to checkout seamlessly for secure payment processing.
 - **Book Ordering and Listing:** Users can browse available books, place orders, and list their own books for sale.
-- **Standard E-commerce Features:** The platform will include other typical e-commerce functionalities common to such web applications.
 - **Product Catalog:** Explore a diverse catalog showcasing available books, including categories, titles, authors, descriptions, and images.
 - **Search and Filter:** Easily find books by title, writer, and genre. Apply filters to refine search results based on price range.
 - **Product Details:** Access detailed information about each book, including price, condition, available quantity, ratings, and reviews.
