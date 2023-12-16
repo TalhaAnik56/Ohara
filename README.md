@@ -33,7 +33,7 @@ These features collectively contribute to an enhanced and user-centric e-commerc
 ## Technologies Used
 - **Frontend:** React 18 with TypeScript, React Query, React Router, Zustand, Chakra UI
   
-- **Backend Technology:**The repository of the Backend can be found at this link: https://github.com/TalhaAnik56/oharaBackend | The backend of Ohara is built using:<br>
+- **Backend Technology:** The repository of the Backend can be found at this link: https://github.com/TalhaAnik56/oharaBackend | The backend of Ohara is built using:<br>
    <ul>
      <li>Framework: Django</li>
      <li>Database: PostgreSQL</li>
