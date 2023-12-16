@@ -2,7 +2,7 @@
 
 Welcome to Ohara! This repository contains the frontend codebase for an e-commerce platform dedicated to buying and selling books. It's developed using React 18 with TypeScript.
 
-Please note: This repository specifically addresses the frontend part of the project and is currently in the development phase. Expect ongoing updates and improvements. The repository of Backend can be found in this link: https://github.com/TalhaAnik56/oharaBackend
+Please note: This repository specifically addresses the frontend part of the project and is currently in the development phase. Expect ongoing updates and improvements. The repository of the Backend can be found at this link: https://github.com/TalhaAnik56/oharaBackend
 
 
 
@@ -33,7 +33,7 @@ These features collectively contribute to an enhanced and user-centric e-commerc
 ## Technologies Used
 - **Frontend:** React 18 with TypeScript, React Query, React Router, Zustand, Chakra UI
   
-- **Backend Technology:**The repository of Backend can be found in this link: https://github.com/TalhaAnik56/oharaBackend | The backend of Ohara is built using:<br>
+- **Backend Technology:**The repository of the Backend can be found at this link: https://github.com/TalhaAnik56/oharaBackend | The backend of Ohara is built using:<br>
    <ul>
      <li>Framework: Django</li>
      <li>Database: PostgreSQL</li>
